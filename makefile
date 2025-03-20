@@ -1,2 +1,2 @@
 all:
-	gcc vice.c -0 vice
+	gcc vice.c init.c -o vice
