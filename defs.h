@@ -62,27 +62,27 @@ typedef struct {
     int majPce[3];
     int minPce[3];
 
-    S_UNDO history[MAXGAMEMOVES]
+    S_UNDO history[MAXGAMEMOVES];
 
 
-}S_BOARD;
+} S_BOARD;
 
 /* Macros*/
 
-#define Fr2SQ (f, r) ( (21 + (f) ) + ( (r) * 10) )
+#define FR2SQ(f,r) ( (21 + (f) ) + ( (r) * 10 ) )
 
 
 
 /* Globals*/
 
 extern int Sq120ToSq64[BRD_SQ_NUM];
-extern int Sq64To120[64];
+extern int Sq64ToSq120[64];
 
 
 
 /* Functions*/
 
-
+extern void AllInit();
 
 
 #endif
