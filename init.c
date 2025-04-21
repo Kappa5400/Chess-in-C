@@ -2,7 +2,7 @@
 #include "defs.h"
 #include "stdlib.h"
 
-#define RAND_64	(	(U64) rand() + \
+#define RAND_64	(	(U64) rand() | \
 					(U64) rand() << 15 + \
 					(U64) rand() << 30 + \
 					(U64) rand() << 45 + \
